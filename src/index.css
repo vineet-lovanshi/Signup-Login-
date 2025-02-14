@@ -1,0 +1,166 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background: linear-gradient(
+    45deg,
+    rgb(151, 175, 197),
+    rgb(161, 189, 200),
+    rgb(112, 160, 176)
+  );
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 500;
+  color: #2a35ff;
+  text-decoration: inherit;
+  cursor: pointer;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+  color: rgb(44, 43, 43);
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
+.signup-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 53px;
+  margin-top: 29px;
+  flex-wrap: wrap;
+}
+form {
+  width: 330px;
+  text-align: center;
+  color: black;
+}
+form input {
+  width: 95%;
+  padding: 5px;
+  border: 2px solid rgb(103, 101, 101);
+  color: black;
+  background-color: white;
+  font-size: 17px;
+  margin-top: 21px;
+}
+form button {
+  width: 135px;
+  height: 33px;
+  background-color: rgb(5, 159, 146);
+  color: white;
+  font-size: 18px;
+  border: none;
+  cursor: pointer;
+  margin-top: 22px;
+}
+form .heading {
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: black;
+}
+.account {
+  text-align: left;
+  margin-top: -10px;
+}
+/* Navbar */
+
+/* Navbar */
+nav {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  padding: 11px 20px; /* Added padding for consistent spacing */
+  background-color: #92e4ff; /* Background color for the navbar */
+  position: fixed; /* Ensures the navbar stays at the top */
+  top: 0; /* Aligns the navbar to the top of the page */
+  left: 0; /* Aligns the navbar to the left of the page */
+  width: 100%; /* Makes the navbar span the full width of the screen */
+  z-index: 1000; /* Keeps the navbar above other content */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Adds a shadow for better separation */
+}
+
+nav ul {
+  list-style: none; /* Removes default list styling */
+  margin: 0;
+  padding: 0;
+  display: flex; /* Aligns list items in a row */
+  gap: 20px; /* Adds spacing between list items */
+}
+
+nav ul li {
+  display: inline-block; /* Ensures list items are inline */
+}
+
+nav ul li a {
+  color: black; /* Text color for links */
+  margin-inline: 11px; /* Adds spacing around links */
+  cursor: pointer; /* Pointer cursor for better UX */
+  text-decoration: none; /* Removes underline from links */
+  font-size: 16px; /* Sets font size for links */
+  font-weight: 500; /* Slightly boldens text */
+  transition: color 0.3s ease; /* Adds smooth transition on hover */
+}
+
+nav ul li a:hover {
+  color: #535bf2; /* Changes color on hover */
+}
+
+.head {
+  font-size: 20px; /* Font size for the "head" class */
+}
+button {
+  width: 135px;
+  height: 33px;
+  background-color: rgb(5, 159, 146);
+  color: white;
+  font-size: 18px;
+  border: none;
+  cursor: pointer;
+  margin-top: 22px;
+}
+.home {
+  display: flex;
+  justify-content: center;
+  justify-content: space-around;
+  gap: 40px;
+}
+.errMsg {
+  color: red;
+}
