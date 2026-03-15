@@ -106,44 +106,44 @@ nav {
   display: flex;
   justify-content: left;
   align-items: center;
-  padding: 11px 20px; /* Added padding for consistent spacing */
-  background-color: #92e4ff; /* Background color for the navbar */
-  position: fixed; /* Ensures the navbar stays at the top */
-  top: 0; /* Aligns the navbar to the top of the page */
-  left: 0; /* Aligns the navbar to the left of the page */
-  width: 100%; /* Makes the navbar span the full width of the screen */
-  z-index: 1000; /* Keeps the navbar above other content */
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Adds a shadow for better separation */
+  padding: 11px 20px;
+  background-color: #92e4ff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 nav ul {
-  list-style: none; /* Removes default list styling */
+  list-style: none;
   margin: 0;
   padding: 0;
-  display: flex; /* Aligns list items in a row */
-  gap: 20px; /* Adds spacing between list items */
+  display: flex;
+  gap: 20px;
 }
 
 nav ul li {
-  display: inline-block; /* Ensures list items are inline */
+  display: inline-block;
 }
 
 nav ul li a {
-  color: black; /* Text color for links */
-  margin-inline: 11px; /* Adds spacing around links */
-  cursor: pointer; /* Pointer cursor for better UX */
-  text-decoration: none; /* Removes underline from links */
-  font-size: 16px; /* Sets font size for links */
-  font-weight: 500; /* Slightly boldens text */
-  transition: color 0.3s ease; /* Adds smooth transition on hover */
+  color: black;
+  margin-inline: 11px;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  transition: color 0.3s ease;
 }
 
 nav ul li a:hover {
-  color: #535bf2; /* Changes color on hover */
+  color: #535bf2;
 }
 
 .head {
-  font-size: 20px; /* Font size for the "head" class */
+  font-size: 20px;
 }
 button {
   width: 135px;
